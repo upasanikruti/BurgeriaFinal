@@ -1,0 +1,165 @@
+body{
+    background-color: rgb(248, 70, 0);
+}
+
+.bg-dark {
+    background-color: rgb(37, 5, 5) !important;
+    opacity: 0.8;
+}
+
+/* ................HEADER.................... */
+
+.navbar-brand{
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.navbar{
+    margin-bottom: 50px;
+}
+
+/* .navbar-expand-lg .navbar-toggler {
+    display: none;
+  } */
+
+/* .................MAIN PAGE.................. */
+
+.img-responsive{
+    height: 500px;
+    width: 100%;
+    /* margin-top: 20px; */
+}
+
+.container .jumbotron {
+    box-shadow: 0 0 50px #000000;
+    border: 3px solid #000000;
+    
+}
+
+#menu-tile, #gallery-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    border: 3px solid black;
+    box-shadow: 0 0 40px #000000;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#menu-tile:hover, #gallery-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile{
+    background: url(/photos/menu-big.jpg) no-repeat;
+    background-position: center;
+}
+
+#gallery-tile{
+    background: url(/photos/gallery-tile\ big.jpg) no-repeat;
+    background-position: center;
+}
+
+#map-tile{
+    background: url(/photos/map-tile.jpg) no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #gallery-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    background-color: black;
+    color: rgb(231, 195, 195);
+    opacity: 0.7;
+    font-family: cursive;
+}
+
+/* ................FOOTER................ */
+
+.panel-footer{
+    height: 100%;
+    background-color: rgb(37, 5, 5);
+    margin-top: 100px;
+    color: white;
+    padding-top: 30px;
+    opacity: 0.8;
+    padding-bottom: 30px;
+}
+
+.copyright{
+    padding-top: 10px;
+}
+
+/* ...............Large Devices.............. */
+
+@media (min-width: 1200px){
+    .container .jumbotron{
+        background: url(/photos/jumbotron-big.jpg) no-repeat;
+        height: 500px;
+    }
+
+    #menu-tile{
+        background: url(/photos/menu-big.jpg) no-repeat;
+    }
+
+    #gallery-tile{
+        background: url(/photos/gallery-big.jpg) no-repeat;
+    }
+}
+
+/* ....................Medium Devices..................... */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container .jumbotron{
+        background: url(/photos/jumbotron-medium.jpg) no-repeat;
+        height: 558px;
+    }
+
+    #menu-tile{
+        background: url(/photos/menu-medium.jpg) no-repeat;
+    }
+
+    #gallery-tile{
+        background: url(/photos/gallery-medium.jpg) no-repeat;
+    }
+}
+
+/* .......................Small Devices.................. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron{
+        background: url(/photos/jumbotron-small.jpg) no-repeat;
+        height: 400px;
+    }
+
+    #menu-tile{
+        background: url(/photos/menu-small.jpg) no-repeat;
+    }
+
+    #gallery-tile{
+        background: url(/photos/gallery-small.jpg) no-repeat;
+    }
+}
+
+/* .................Extra Small Devices.................... */
+
+@media (max-width: 767px){
+    .container .jumbotron{
+        background: url(/photos/jumbotron-xs.jpg) no-repeat;
+        height: 300px;
+    }
+
+    #menu-tile{
+        background: url(/photos/menu-xs.jpg) no-repeat;
+    }
+
+    #gallery-tile{
+        background: url(/photos/gallery-xs.jpg) no-repeat;
+    }
+}
